@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+	color: rgba(255,133,27);
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+	background: #fff;
+}
+
+.formulario{
+    width: 500px;
+    max-width: 100%;
+    margin:auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+    position: relative;
+}
+.formulario__titulo{
+    text-align: center;
+    margin-top: 0;
+	margin-bottom: 40px;
+    color: #fff;
+	background: rgba(255,133,27);
+	border-radius: 5px;
+	
+}
+.formulario__input, .formulario__label,.formulario__submit,.formulario__fecha{
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+    
+}
+.formulario__input,.formulario__fecha{
+    padding: 18px;
+    background: none;
+	border: none;
+	border-bottom: 2px solid #FF851B;
+	margin-bottom: 40px;
+}
+.formulario__input:focus{
+    outline: none;
+	
+}
+.formulario__fecha:focus{
+    outline: none;
+	
+}
+.formulario__input:focus + .formulario__label{
+	margin-top: -130px;
+}
+.formulario__fecha:focus + .formulario__label{
+	margin-top: -130px;
+}
+.formulario__label{
+	padding-left: 15px;
+	position: absolute;
+	margin-top: -85px;
+	z-index: -20;
+	color: rgba(255,133,27.3);
+	transition: all 0.3s;
+}
+
+/*PARTE DEL SUBMIT/
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+.formulario__submit{
+    background: rgba(255,133,27);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+	border-radius: 5px;
+	position: relative;
+	top: 10px;
+}
+.fijar{
+    margin-top: -135px;
+}
+#aqui{
+    margin-top: -135px;
+}
+/*PARTE DEL titulo del fecha*/
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+
+/*PARTE DEL titulo del seguro*/
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+.seguro{
+	font-size: 1.3rem;
+	color: #FF851B;
+	font-weight: normal;
+}
+.formulario__fecha[placeholder]{
+    color: rgba(255,133,27.3);
+}
+/*PARTE DEL RADIO BUTTON*/
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+.formulario input[type="radio"]{
+	display: none;
+}
+.formulario .radio label{
+	color: #FF851B;
+	padding: 5px 15px 5px 51px;
+	display: inline-block;
+	position: relative;
+	font-size: 1em;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.formulario .radio label:hover{
+	background: rgba(255,133,27,0.2);
+	
+}
+.formulario .radio label:before{
+	content: "";
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	background: none;
+	border: 3px solid #FF851B;
+	border-radius: 50%;
+	position: absolute;
+	left: 15px;
+	top: 4px;
+	
+}
+.formulario input[type="radio"]{
+	display: none;
+}
+.formulario input[type="radio"]:checked + label{
+	padding: 5px 15px;
+	background: #FF851B;
+	border-radius: 5px;
+	color: #fff;
+	
+}
+.formulario input[type="radio"]:checked + label:before{
+	display: none;
+	
+}
+
+.formulario input[type="radio"]:required{
+     
+}
+
+
+
+
