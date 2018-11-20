@@ -20,30 +20,30 @@
     </head>
     <body>
         
-               <form class="formulario" action="ControlSolicitud" method="post" method="get">
+               <form class="formulario" action="CSolicitud" method="post" method="get">
         	<div class="inputs">
         		<h1 class="formulario__titulo">Solicitud del Credito</h1>
         		
                         <input type="text" class="formulario__input" id="rut" name="rut" required>
-        		<label for="rut" class="formulario__label">Rut:</label>
+        		<label id="rut" for="rut" class="formulario__label">Rut:</label>
         		
                         <input type="text" class="formulario__input" id="nombre" name="nombre" required>
-        		<label for="nombre" class="formulario__label">Nombre:</label>
+        		<label id="nombre" for="nombre" class="formulario__label">Nombre:</label>
         		
                         <input type="text" class="formulario__input" id="apellido" name="apellido" required>
-        		<label for="apellido" class="formulario__label">Apellido:</label>
+        		<label id="apellido" for="apellido" class="formulario__label">Apellido:</label>
         		
                         <input type="text" class="formulario__input" id="renta" name="renta" required>
-        		<label for="renta" class="formulario__label">Renta Liquida:</label>
+        		<label id="renta" for="renta" class="formulario__label">Renta Liquida:</label>
         		
                         <input type="text" class="formulario__input" id="celular" name="celular" required>
-        		<label for="celular" class="formulario__label">Celular:</label>
+        		<label id="celular" for="celular" class="formulario__label">Celular:</label>
         		
                         <input type="text" class="formulario__input" id="telefono" name="telefono" required>
-        		<label for="telefono" class="formulario__label">Telefono:</label>
+        		<label id="telefono" for="telefono" class="formulario__label">Telefono:</label>
         		
                         <input type="email"  class="formulario__input" id="correo" name="correo" required>
-        		<label for="correo" class="formulario__label">Correo:</label>
+        		<label id="correo" for="correo" class="formulario__label">Correo:</label>
         		
         	</div>
         	<div class="opcion">

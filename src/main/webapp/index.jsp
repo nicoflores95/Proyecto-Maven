@@ -49,15 +49,15 @@
            
             
            <input type="txt" class="formulario__input" id="indentificador" onclick="" required name="indentificador" >
-           <label for="identificador" class="formulario__label">Rut:</label>
+           <label id="aqui" for="identificador" class="formulario__label">Rut:</label>
            
            
            <input type="txt" class="formulario__input" id="monto" required name="monto">
-           <label for="monto" class="formulario__label">Monto Solicitado:</label>
+           <label id="aqui" for="monto" class="formulario__label">Monto Solicitado:</label>
 
             
            <input type="txt" class="formulario__input" required name="cuotas" >
-           <label for="" class="formulario__label">Plazo en Cuotas:</label>
+           <label id="aqui" for="" class="formulario__label">Plazo en Cuotas:</label>
        
             
            <input type="txt" id="datepicker" class="formulario__fecha" required name="fecha" placeholder="dd-mm-aaaa" placeholder-color="rgba(255,133,27.3)">
