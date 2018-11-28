@@ -1,16 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package simulador;
 
-import static org.junit.Assert.assertTrue;
+import static net.bytebuddy.matcher.ElementMatchers.is;
 import static org.testng.Assert.*;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /**
@@ -19,40 +10,22 @@ import org.testng.annotations.Test;
  */
 public class MetodosNGTest {
     
-    public MetodosNGTest() {
-    }
 
-    @BeforeClass
-    public static void setUpClass() throws Exception {
-    }
 
-    @AfterClass
-    public static void tearDownClass() throws Exception {
-    }
-
-    @BeforeMethod
-    public void setUpMethod() throws Exception {
-    }
-
-    @AfterMethod
-    public void tearDownMethod() throws Exception {
-    }
-
-    /**
-     * Test of validarMonto method, of class Metodos.
-     */
     @Test
     public void testValidarMonto() {
-        System.out.println("validarMonto");
+       
+        
         String monto1 = "600000";
         Metodos instance = new Metodos();
         boolean expResult = true;
         boolean result = instance.validarMonto(monto1);
         
         try{
-        assertEquals(result, expResult);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+            
+       assertEquals(result, expResult);
+        
+        
         }catch(Error err){
             
             fail("Monto INVALIDO");
@@ -60,21 +33,18 @@ public class MetodosNGTest {
         }
     }
 
-    /**
-     * Test of validarCouta method, of class Metodos.
-     */
     @Test
     public void testValidarCouta() {
-        System.out.println("validarCouta");
+
         String cuota1 = "12";
         Metodos instance = new Metodos();
         boolean expResult = true;
         boolean result = instance.validarCouta(cuota1);
         
         try{
+            
         assertEquals(result, expResult);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+
         }catch(Error err){
             
             fail("couta INVALIDO");
@@ -82,20 +52,18 @@ public class MetodosNGTest {
         }
     }
 
-    /**
-     * Test of validarRenta method, of class Metodos.
-     */
+
     @Test
     public void testValidarRenta() {
-        System.out.println("validarRenta");
+
         String renta1 = "600000";
         Metodos instance = new Metodos();
         boolean expResult = true;
         boolean result = instance.validarRenta(renta1);
         try{
+            
         assertEquals(result, expResult);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+
         }catch(Error err){
             
             fail("Renta INVALIDO");
@@ -103,21 +71,19 @@ public class MetodosNGTest {
         }
     }
 
-    /**
-     * Test of validarRut method, of class Metodos.
-     */
+
     @Test
     public void testValidarRut() {
-        System.out.println("validarRut");
+
         String rut = "19";
         Metodos instance = new Metodos();
         boolean expResult = true;
         boolean result = instance.validarRut(rut);
         
         try{
+            
         assertEquals(result, expResult);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+
         }catch(Error err){
             
             fail("rut INVALIDO");
@@ -125,21 +91,18 @@ public class MetodosNGTest {
         }
     }
 
-    /**
-     * Test of validarNombre method, of class Metodos.
-     */
     @Test
     public void testValidarNombre() {
-        System.out.println("validarNombre");
+
         String nombre = "nioc";
         Metodos instance = new Metodos();
         boolean expResult = true;
         boolean result = instance.validarNombre(nombre);
         
         try{
+            
         assertEquals(result, expResult);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+
         }catch(Error err){
             
             fail("Nombre INVALIDO");
@@ -147,9 +110,7 @@ public class MetodosNGTest {
         }
     }
 
-    /**
-     * Test of validarCelular method, of class Metodos.
-     */
+
     @Test
     public void testValidarCelular() {
         System.out.println("validarCelular");
@@ -159,9 +120,9 @@ public class MetodosNGTest {
         boolean result = instance.validarCelular(celular);
         
         try{
+            
         assertEquals(result, expResult);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+
         }catch(Error err){
             
             fail("CELULAR INVALIDO");
@@ -169,21 +130,19 @@ public class MetodosNGTest {
         }
     }
 
-    /**
-     * Test of validarTelefono method, of class Metodos.
-     */
+
     @Test
     public void testValidarTelefono() {
-        System.out.println("validarTelefono");
+
         String telefono = "26451419";
         Metodos instance = new Metodos();
         boolean expResult = true;
         boolean result = instance.validarTelefono(telefono);
         
         try{
+            
         assertEquals(result, expResult);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+
         }catch(Error err){
             
             fail("TELEFONO INVALIDO");
@@ -191,25 +150,42 @@ public class MetodosNGTest {
         }
     }
 
-    /**
-     * Test of validarCorreo method, of class Metodos.
-     */
+
     @Test
     public void testValidarCorreo() {
-        System.out.println("validarCorreo");
-        String Correo = "nico@outlook.com";
+
+        String email = "nico@gmail.com";
         Metodos instance = new Metodos();
-        boolean result = false;
-        result = instance.validarCorreo(Correo);
+        boolean expResult = true;
+        boolean result = instance.validarCorreo(email);
         
         try{
-        assertTrue("Error, El correo es invalido", result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        assertEquals(result, expResult);
+
         }catch(Error err){
             
             fail("CORREO INVALIDO");
             
+        }
+    }
+    
+       @Test
+    public void testMultiplica(){
+        
+        Metodos instance = new Metodos();
+        
+        int a = instance.multiplica(3, 2);
+        int b = 6;
+           System.out.println(a);
+        try{
+            
+        assertEquals(b, a);
+        
+        
+        }catch(Error err){
+            
+        fail("CORREO INVALIDO");
+        
         }
     }
     

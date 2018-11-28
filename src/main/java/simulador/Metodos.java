@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package simulador;
+
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -24,7 +20,7 @@ public class Metodos {
         
         boolean aprobo = false;
         
-        if (isNumeric(monto1 ) == true) {
+        if (isNumeric(monto1 ) ==true) {
             
             monto = Integer.parseInt(monto1);
             
@@ -42,7 +38,7 @@ public class Metodos {
     {
         boolean paso = false;
         int cuota;
-        if (isNumeric(cuota1) == true) {
+        if (isNumeric(cuota1) ==true) {
             
             cuota = Integer.parseInt(cuota1);
         if (cuota > 11 && 61 > cuota) {
@@ -58,7 +54,7 @@ public class Metodos {
         boolean paso = false;
         int renta;
         
-        if (isNumeric(renta1)) {
+        if (isNumeric(renta1)==true) {
             
             renta = Integer.parseInt(renta1);
             
@@ -79,19 +75,26 @@ public boolean validarRut(String rut) {
         rut = rut.replace(".", "");
         rut = rut.replace("-", "");
         int rutAux = Integer.parseInt(rut.substring(0, rut.length() - 1));
-
+        
         char dv = rut.charAt(rut.length() - 1);
 
-        int m = 0, s = 1;
+        int m = 0;
+        int s = 1;
+  
         for (; rutAux != 0; rutAux /= 10) {
+           
             s = (s + rutAux % 10 * (9 - m++ % 6)) % 11;
+            
         }
         if (dv == (char) (s != 0 ? s + 47 : 75)) {
             validacion = true;
         }
 
     } catch (java.lang.NumberFormatException e) {
+        
+        
     } catch (Exception e) {
+        
     }
     return validacion;
 }
@@ -100,25 +103,24 @@ public boolean validarRut(String rut) {
 
 public boolean validarNombre(String nombre)
 {
-        boolean V = false;
+        boolean ver = false;
         
         for (int n=0; n < nombre.length (); n++) 
              { 
-                     char c = nombre.charAt (n);
         
                     int ascii = nombre.codePointAt(n);
       
                     if(ascii<39 || ascii>40 && ascii<45 || ascii<65 && ascii>45  || ascii <97 && ascii>90 || ascii<128 && ascii >122 || ascii < 160 && ascii > 155 ){
                  
-                            V = false;
+                            ver = false;
                      }
         
                     else{
-                        V = true;
+                        ver = true;
                         }            
     }
         
-        return V;
+        return ver;
 }
 
     //Validar cantidad de digito que tiene el celular
@@ -166,12 +168,12 @@ public boolean validarNombre(String nombre)
         }
         
         //Validar el Correo electronico
-        public boolean validarCorreo(String Correo){
+        public boolean validarCorreo(String email){
             
            String regex = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
  
         Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(Correo);
+        Matcher matcher = pattern.matcher(email);
         
         return matcher.matches();
         
@@ -185,6 +187,14 @@ public boolean validarNombre(String nombre)
 		return false;
 	}
 }
+        
+        public int multiplica(int operando1, int operando2){
+            
+            
+            int a = operando1*operando2;
+            
+        return a;
+    }
     
     
 }

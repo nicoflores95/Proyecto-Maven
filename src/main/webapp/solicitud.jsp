@@ -14,8 +14,7 @@
         
         <link rel="stylesheet" href="css/estilos_solicitud.css">
         <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-        
-        
+               
         
     </head>
     <body>
@@ -42,7 +41,7 @@
                         <input type="text" class="formulario__input" id="telefono" name="telefono" required>
         		<label id="telefono" for="telefono" class="formulario__label">Telefono:</label>
         		
-                        <input type="email"  class="formulario__input" id="correo" name="correo" required>
+                        <input type="text"  class="formulario__input" id="correo" name="correo" required>
         		<label id="correo" for="correo" class="formulario__label">Correo:</label>
         		
         	</div>

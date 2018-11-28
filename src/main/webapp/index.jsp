@@ -10,16 +10,12 @@
     <head>
         <title>Testing</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        
-         <link rel="stylesheet" type="text/css" href="css/estilos.css">
-         
-         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">         
+                          
          <link rel="stylesheet" href="css/jquery-ui.min.css">
          <link rel="stylesheet" href="css/estilos.css">
          <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-         <script type="text/javascript" src="js/jquery-ui.js"></script>
+          <script type="text/javascript" src="js/jquery-ui.js"></script>
          <script type="text/javascript" src="js/datepicker-es.js"></script>
 
          <script>
@@ -49,15 +45,15 @@
            
             
            <input type="txt" class="formulario__input" id="indentificador" onclick="" required name="indentificador" >
-           <label id="aqui" for="identificador" class="formulario__label">Rut:</label>
+           <label id="indentificador" for="identificador" class="formulario__label">Rut:</label>
            
            
            <input type="txt" class="formulario__input" id="monto" required name="monto">
-           <label id="aqui" for="monto" class="formulario__label">Monto Solicitado:</label>
+           <label id="monto" for="monto" class="formulario__label">Monto Solicitado:</label>
 
             
            <input type="txt" class="formulario__input" required name="cuotas" >
-           <label id="aqui" for="" class="formulario__label">Plazo en Cuotas:</label>
+           <label id="cuotas" for="" class="formulario__label">Plazo en Cuotas:</label>
        
             
            <input type="txt" id="datepicker" class="formulario__fecha" required name="fecha" placeholder="dd-mm-aaaa" placeholder-color="rgba(255,133,27.3)">

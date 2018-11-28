@@ -20,6 +20,10 @@
         <servlet-name>CSolicitud</servlet-name>
         <servlet-class>com.mycompany.proyectotesting.crt.CSolicitud</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>dd</servlet-name>
+        <servlet-class>com.mycompany.proyectotesting.crt.dd</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>prueba</servlet-name>
         <url-pattern>/prueba</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>CSolicitud</servlet-name>
         <url-pattern>/CSolicitud</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dd</servlet-name>
+        <url-pattern>/dd</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
